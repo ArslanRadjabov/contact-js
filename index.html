@@ -1,23 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/flexboxgrid.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
     <link rel="stylesheet" href="css/main.min.css" />
-  </head>
+</head>
 
-  <body>
+<body>
+    <section class="contact">
+        <div class="contact__boxs">
+            <div class="contact__main">
+                <div class="contact__header">
+                    <h1 class="contact__title">Contact Add</h1>
+                </div>
+
+                <div class="contact__boxinput">
+                    <form class="contact__form" id="form">
+                        <label class="contact__label" for="name">
+                <span class="contact__span">First name</span>
+                <input class="contact__input" type="text" id="name" placeholder="Name" required>
+              </label>
+                        <label class="contact__label" for="fname">
+                <span class="contact__span">Last name</span>
+
+                <input class="contact__input" type="text" id="fname" placeholder="Last Name" required>
+              </label>
+                        <label class="contact__label" for="number">
+                <span class="contact__span">Number</span>
+                <input class="contact__input" type="number" id="number" value="998" required>
+              </label>
+
+                        <label class="contact__label" for="select">
+                <span class="contact__span">Category</span>
+                <select class="contact__select" name="contact-cat" id="contact-cat">
+                  <option value="family">Family</option>
+                  <option value="friends">Friends</option>
+                  <option value="colleague">Colleague</option>
+                </select>
+              </label>
+
+                        <button class="contact__submit" type="submit">Add Contact</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="contact__main">
+                <div class="contact__header">
+                    <h1 class="contact__title">Contact List</h1>
+                </div>
+
+                <div class="contact__buttonbox">
+                    <button class="contact__btn" type="button" id="all">All</button>
+                    <button class="contact__btn" type="button" id="fam">Family</button>
+                    <button class="contact__btn" type="button" id="fri">Friends</button>
+                    <button class="contact__btn" type="button" id="col">Colleague</button>
+                </div>
+
+                <ul class="contact__list" id="id-list">
+                    <!-- <li class="contact__item contact__family">
+              <p class="contact__text">
+                <span class="contact__cate">Full name</span>
+                Toshmat Eshmatov
+              </p>
+              <p class="contact__text">
+                <span class="contact__cate">Number</span>
+                +998931234567
+              </p>
+              <p class="contact__text">
+                <span class="contact__cate">Category</span>
+                Family
+              </p>
+              <p class="contact__text"><a class="contact__tel" href="tel:+998931234567">Call <i class='bx bxs-phone-call'></i></a></p> -->
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>
